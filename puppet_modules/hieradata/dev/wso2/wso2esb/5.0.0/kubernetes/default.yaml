@@ -96,20 +96,20 @@ wso2::esb_wsdl_epr_prefix:
 #     validation_query: "%{hiera('wso2::datasources::mysql::validation_query')}"
 #     validation_interval: "%{hiera('wso2::datasources::common::validation_interval')}"
 
-wso2::registry_mounts:
-  wso2_config_db:
-    path: /_system/config
-    target_path: /_system/config/esb
-    read_only: false
-    registry_root: /
-    enable_cache: true
+# wso2::registry_mounts:
+#   wso2_config_db:
+#     path: /_system/config
+#     target_path: /_system/config/esb
+#     read_only: false
+#     registry_root: /
+#     enable_cache: true
 
-  wso2_gov_db:
-    path: /_system/governance
-    target_path: /_system/governance
-    read_only: false
-    registry_root: /
-    enable_cache: true
+#   wso2_gov_db:
+#     path: /_system/governance
+#     target_path: /_system/governance
+#     read_only: false
+#     registry_root: /
+#     enable_cache: true
 
 # Secure vault configuration
 #wso2::enable_secure_vault: true
